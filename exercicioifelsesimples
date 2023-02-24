@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class exercicioifsimples {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("quantas horas: ");
+
+        int hora;
+        hora = sc.nextInt();
+
+        if (hora < 12) {                      //if e verdadeiro
+
+            System.out.println("bom dia ");
+
+        } else {                             //else e falso
+            System.out.println("boa tarde ");
+        }
+        sc.close();
+    }
+}
