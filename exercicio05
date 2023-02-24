@@ -1,0 +1,27 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class exercicio05 {
+    public static void main(String[] args) {
+        Locale.setDefault(Locale.US);
+        Scanner sc = new Scanner(System.in);
+
+        int id1,id2, quantidade1, quantidade2;
+        double valor1 ,valor2, total;
+
+        id1 = sc.nextInt();
+        quantidade1 = sc.nextInt();
+        valor1 = sc.nextDouble();
+
+        id2 = sc.nextInt();
+        quantidade2 = sc.nextInt();
+        valor2 = sc.nextDouble();
+
+      total = valor1 * quantidade1 + valor2 * quantidade2;
+
+        System.out.printf("Valor a Pagar R$ %.2f%n",total);
+
+
+        sc.close();
+    }
+}
