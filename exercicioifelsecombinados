@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class exercicioifelse {
+    public static void main(String[] args) {
+        System.out.println("quantas hora por favor? ");
+
+        Scanner sc = new Scanner(System.in);
+
+        int horas;
+
+        horas = sc.nextInt();
+        if (horas < 12) {  //apenas o IF possui condição
+            System.out.println("Bom dia! ");
+        } else {          //else NÃO possui condição
+            if (horas < 18) {
+                System.out.println("Boa Tarde! ");
+            } else {
+                System.out.println("Boa Noite! ");
+
+            }
+        }
+        sc.close();
+    }
+}
